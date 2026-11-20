@@ -7,17 +7,19 @@ Write your code in this editor and press "Run" button to compile and execute it.
 *******************************************************************************/
 
 #include <stdio.h>
-
-void main()
+int sum();
+int main()
 {
-    int P, C, E, Total;
-    printf("Enter produced components per cycle= ");
-    scanf("%d", &P);
-    printf("Enter cycles completed = ");
-    scanf("%d", &C);
-    printf("Enter the additional components = ");
-    scanf("%d", &E);
-    Total = (P*C)+E;
-    printf("Total components produced = , %d", Total);
-
+    int total;
+    printf("\n\n Function : a simple structure of function :\n");
+    printf("-------------");
+    total = sum (5, 5);
+    printf("The total is : %d\n", total);
+    return 0;
+}
+int sum(int a, int b)
+{
+    int s;
+    s=a+b;
+    return s;
 }
